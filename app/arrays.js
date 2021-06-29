@@ -4,7 +4,12 @@
 // output: ['is', 'a', 'split', 'sentence.', 'This']
 
 function rearranger(arr) {
+    let array = arr
+    let start = array.shift()
+    array.push(start)
+    return array
 }
+// NOTE shift takes index 0 and makes it an object. push adds an object to the end of an array
 
 
 // ------------------------------------------
@@ -16,6 +21,7 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
+
 }
 
 
