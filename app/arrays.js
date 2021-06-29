@@ -21,7 +21,7 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
-
+    return (Math.max(...arr))
 }
 
 
@@ -34,6 +34,8 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+    newArr = arr.map(i => i * arr.length)
+    return newArr
 }
 
 
@@ -41,7 +43,7 @@ function elemsTimesLength(arr) {
 
 
 
-//4. Flights from Boise. Write a function that will use the following data to return the cost of flights from boise to a neighboring city, by default return the standard cost unless firstClass is set to true
+//4. Flights from Boise. Write a function that will use the following data to return the cost of flights from Boise to a neighboring city, by default return the standard cost unless firstClass is set to true
 
 let flights = [{
     from: 'BOI',
